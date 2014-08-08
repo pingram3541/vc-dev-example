@@ -20,7 +20,7 @@ function test_vc_map_dependencies() {
 }
 
 
-function text_vc_map_init() {
+function test_vc_map_init() {
 	add_action( 'admin_notices', 'test_vc_map_dependencies' );
 	// Note that all keys=values in mapped shortcode can be used with javascript variable vc.map, and php shortcode settings variable.
 	$settings = array(
@@ -125,5 +125,5 @@ function text_vc_map_init() {
 }
 
 
-add_action('init', 'text_vc_map_init');
+add_action('init', 'test_vc_map_init');
 
